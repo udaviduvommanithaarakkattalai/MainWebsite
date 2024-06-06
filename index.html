@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Helpa template</title>
+    <meta property="og:title" content="Helpa template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div id="banner" data-persistence="true" class="banner-banner">
+          <div class="banner-captions">
+            <div class="banner-caption">
+              <span class="banner-text">
+                <span>
+                  Get updates and action alerts from us by joining our
+                </span>
+              </span>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="banner-link"
+              >
+                <span>newsletter</span>
+              </a>
+            </div>
+            <a href="https://medium.com" class="banner-link1">
+              <div class="banner-caption1">
+                <span class="banner-text1"><span>Join our</span></span>
+                <span class="banner-text2"><span>newsletter</span></span>
+              </div>
+            </a>
+          </div>
+          <div id="close" class="banner-close">
+            <svg viewBox="0 0 1024 1024" class="banner-icon">
+              <path
+                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <section class="home-hero">
+          <div class="home-main">
+            <div class="home-content">
+              <header class="home-header">
+                <header data-thq="thq-navbar" class="home-navbar-interactive">
+                  <div class="branding-branding branding-root-class-name1">
+                    <img
+                      alt="image"
+                      src="public/307987427_100631379489831_7503186480526532890_upscaled-removebg-preview-200w.png"
+                      class="branding-logo"
+                    />
+                  </div>
+                  <div
+                    data-thq="thq-navbar-nav"
+                    data-role="Nav"
+                    class="home-desktop-menu"
+                  >
+                    <div class="home-links">
+                      <a href="#mission" class="home-link navLink">Mission</a>
+                      <a href="#testimonials" class="home-link1 navLink">
+                        Works
+                      </a>
+                      <a href="#donation" class="home-link2 navLink">
+                        <span>Donate</span>
+                        <br />
+                      </a>
+                      <a href="#contact" class="home-link3 navLink">Contact</a>
+                    </div>
+                  </div>
+                  <div data-thq="thq-burger-menu" class="home-burger-menu">
+                    <button class="button">
+                      <svg viewBox="0 0 1024 1024" class="home-icon">
+                        <path
+                          d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                    <div
+                      data-thq="thq-mobile-menu-nav"
+                      data-role="Nav"
+                      class="home-nav"
+                    >
+                      <div class="home-container1">
+                        <div class="branding-branding branding-root-class-name">
+                          <img
+                            alt="image"
+                            src="public/logo.svg"
+                            class="branding-logo"
+                          />
+                        </div>
+                        <div data-thq="thq-close-menu" class="home-menu-close">
+                          <svg viewBox="0 0 1024 1024" class="home-icon02">
+                            <path
+                              d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="home-links1">
+                        <a href="index.html" class="home-link4 navLink">
+                          Mission
+                        </a>
+                        <a href="index.html" class="home-link5 navLink">
+                          Take Action
+                        </a>
+                        <a href="index.html" class="home-link6 navLink">News</a>
+                        <a href="index.html" class="home-link7 navLink">
+                          Contact
+                        </a>
+                      </div>
+                      <div class="home-icon-group">
+                        <svg
+                          viewBox="0 0 950.8571428571428 1024"
+                          class="home-icon04"
+                        >
+                          <path
+                            d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                          ></path></svg
+                        ><svg
+                          viewBox="0 0 877.7142857142857 1024"
+                          class="home-icon06"
+                        >
+                          <path
+                            d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                          ></path></svg
+                        ><svg
+                          viewBox="0 0 602.2582857142856 1024"
+                          class="home-icon08"
+                        >
+                          <path
+                            d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+              </header>
+              <div class="home-hero-section">
+                <div class="home-header01">
+                  <h1 class="home-heading">You can make a difference</h1>
+                </div>
+                <div class="home-buttons">
+                  <button class="button"><span>Donate Now</span></button>
+                  <button class="home-button2 button">
+                    <span>Join our newsletter</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="home-image"><button class="button">Donate</button></div>
+          </div>
+          <div class="home-details-container">
+            <div class="home-details">
+              <div class="home-category">
+                <img
+                  alt="image"
+                  src="public/details-1.svg"
+                  class="home-image1"
+                />
+                <p class="home-text004">
+                  <span>Over 4 years of dedicated service.</span>
+                  <br />
+                </p>
+              </div>
+              <div class="home-category1">
+                <img
+                  alt="image"
+                  src="public/details-2.svg"
+                  class="home-image2"
+                />
+                <p class="home-text007">
+                  <span>Aided thousands during the&nbsp;&nbsp;</span>
+                  <span>COVID-19 pandemic.</span>
+                </p>
+              </div>
+              <div class="home-category2">
+                <img
+                  alt="image"
+                  src="public/details-3.svg"
+                  class="home-image3"
+                />
+                <p class="home-text010">
+                  <span>
+                    Distributing daily food, water aid to roadside homeless
+                    during lockdown.
+                  </span>
+                  <br />
+                  <span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-petitions">
+          <div class="home-container2">
+            <img
+              alt="image"
+              src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fCUyMGluZGlhJTIwcG9vcnxlbnwwfHx8fDE3MTc2ODU2NjZ8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;h=400"
+              class="home-image4"
+            />
+            <div class="home-images"></div>
+          </div>
+          <div class="home-content01">
+            <div class="home-main1">
+              <div class="home-header02">
+                <h2 class="home-heading1">
+                  Support our cause with a donation and make a meaningful impact
+                  for those who need it most
+                </h2>
+              </div>
+            </div>
+            <div class="home-button4">
+              <button class="button"><span>Donate</span></button>
+            </div>
+          </div>
+        </section>
+        <section class="home-steps"></section>
+        <section id="mission" class="home-quote-one">
+          <div class="home-quote-content">
+            <span class="home-heading2">Mission</span>
+            <h2 class="home-quote">
+              Udhaviduvom Manitha Arakkatalai is dedicated to building a
+              brighter tomorrow, one helping hand at a time. Our mission is to
+              provide vital support and assistance tothose facing adversity,
+              guided by a commitment to compassion, integrity, and community
+              empowerment. Together with our dedicated volunteers, we strive to
+              uplift lives and foster a more compassionate society through our
+              unwavering dedication to serving others.
+            </h2>
+            <h2 class="home-quote1">
+              <span>
+                The best way to find yourself is to lose yourself in the service
+                of others.
+              </span>
+              <span></span>
+            </h2>
+            <div class="home-quoted">
+              <p class="home-caption">- Mahatma Gandhi</p>
+            </div>
+          </div>
+        </section>
+        <section class="home-quote-two">
+          <div class="home-content02">
+            <div class="home-video">
+              <div class="home-play">
+                <div class="home-button6">
+                  <svg viewBox="0 0 808.5942857142857 1024" class="home-icon10">
+                    <path
+                      d="M790.857 529.714l-758.857 421.714c-17.714 9.714-32 1.143-32-18.857v-841.143c0-20 14.286-28.571 32-18.857l758.857 421.714c17.714 9.714 17.714 25.714 0 35.429z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <video
+                src=""
+                poster="https://play.teleporthq.io/static/svg/videoposter.svg"
+                class="home-video1"
+              ></video>
+            </div>
+            <div class="home-quote-content1">
+              <h2 class="home-quote2">
+                "The smallest act of kindness is worth more than the grandest
+                intention."
+              </h2>
+              <div class="home-quoted1">
+                <p class="home-caption1">Oscar Wilde</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-donate">
+          <div id="donation" class="home-content03">
+            <span class="home-heading3">
+              <span class="home-text017">
+                Support our cause now and make a difference in people's lives!
+              </span>
+              <br />
+              <br />
+            </span>
+            <img
+              src="public/whatsapp%20image%202024-06-06%20at%2020.36.49_88d2e460-400w.jpg"
+              alt="image"
+              class="home-image5"
+            />
+            <div class="home-header03"></div>
+            <div class="home-amount">
+              <div class="home-row"></div>
+              <div class="home-row1"></div>
+            </div>
+            <button class="home-button7 button">DONATE NOW</button>
+          </div>
+        </div>
+        <section id="testimonials" class="home-donation-use">
+          <div class="home-header04">
+            <h2 class="home-heading4">
+              <span>
+                Your donations will be used to help improve the lives of people
+                in need.
+              </span>
+              <br />
+            </h2>
+          </div>
+          <div class="home-accordion">
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element"
+            >
+              <div class="home-header05">
+                <h3 class="home-text022">
+                  <span>Food Distribution:</span>
+                  <br />
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name4"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text025">
+                  <span>
+                    1. Dress and food distributed for slum people on Christmas
+                    celebration.
+                  </span>
+                  <br />
+                  <span>2. Food distribution on lockdown period.</span>
+                  <br />
+                  <span>
+                    3. Bread and milk distributed for flood-affected area
+                    people.
+                  </span>
+                  <br />
+                  <span>
+                    4. Food distribution for flood-affected area people.
+                  </span>
+                  <br />
+                  <span>5. Food distribution for world food day.</span>
+                  <br />
+                  <span>6. Food distribution for homeless people.</span>
+                  <br />
+                  <span>
+                    7. Food and water bottle distributed on lockdown period.
+                  </span>
+                  <br />
+                  <span>8. Food for dogs on lockdown period.</span>
+                  <br />
+                  <span>9. Food distribution for Republic Day.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element1"
+            >
+              <div class="home-header06">
+                <h3 class="home-text043">Clothing Distribution:</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name5"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text044">
+                  <span>
+                    1. Dress distributed for sanitary workers, widow women, and
+                    special children.
+                  </span>
+                  <br />
+                  <span>2. Dress distributed for poor children.</span>
+                  <br />
+                  <span>3. Dress distributed for World Old Age Day.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element2"
+            >
+              <div class="home-header07">
+                <h3 class="home-text050">Emergency Relief:</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name6"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text051">
+                  <span>
+                    1. Rice bag supported to mentally challenged children.
+                  </span>
+                  <br />
+                  <span>2. Free water stall launched for the public.</span>
+                  <br />
+                  <span>
+                    3. Rice bag distribution COVID-19 vaccination special camp.
+                  </span>
+                  <br />
+                  <span>
+                    4. Provision items distributed on lockdown period.
+                  </span>
+                  <br />
+                  <span>5. Medical support for old age.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element3"
+            >
+              <div class="home-header08">
+                <h3 class="home-text061">
+                  <span>Bedding Distribution:</span>
+                  <br />
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name7"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text064">
+                  <span>
+                    1. Bedsheet distribution for homeless people in nighttime.
+                  </span>
+                  <br />
+                  <span>
+                    2. Bedsheet, mattress, pillow for flood-affected people.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element4"
+            >
+              <div class="home-header09">
+                <h3 class="home-text068">
+                  <span>Covid-19 Response:</span>
+                  <br />
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name8"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text071">
+                  <span>
+                    1. Food and water bottle distributed on lockdown period.
+                  </span>
+                  <br />
+                  <span>2. Covid-19 awareness for the public.</span>
+                  <br />
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element5"
+            >
+              <div class="home-header10">
+                <h3 class="home-text076">
+                  <span>Other Support:</span>
+                  <br />
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name9"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text079">
+                  <span>
+                    1. Candles and mosquito coils distributed for flood-affected
+                    areas.
+                  </span>
+                  <br />
+                  <span>
+                    2. Sweets, cakes, and mixture distributed for roadside
+                    people.
+                  </span>
+                  <br />
+                  <span>3. Eye camp conducted for local residents.</span>
+                  <br />
+                  <span>4. Covid-19 awareness campaigns for the public.</span>
+                  <br />
+                  <span>5. Much more</span>
+                  <br />
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="home-container4">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-updates">
+          <div class="home-content10">
+            <div class="home-details1">
+              <div class="home-header11">
+                <h2 class="home-heading5">
+                  Get updates from our trust by joining our newsletter
+                </h2>
+              </div>
+              <div class="home-action">
+                <div class="home-input">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    class="home-textinput input"
+                  />
+                  <button class="home-button8 button">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class="home-slider">
+              <div class="home-slides">
+                <div class="slide-active slide">
+                  <img
+                    alt="image"
+                    src="public/slide-1-400h.png"
+                    class="home-image6"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670991761566-534b07539db5?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="home-image7"
+                  />
+                  <span class="home-text090">
+                    <span>This is a test slide</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670087670280-7a3e71a7efa6?ixid=Mnw5MTMyMXwwfDF8YWxsfDE1fHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="home-image8"
+                  />
+                  <span class="home-text093">
+                    <span>This one also!</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="home-buttons-container">
+                <div class="home-buttons1"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer id="contact" class="home-footer">
+          <div class="home-top">
+            <div class="branding-branding">
+              <img
+                alt="image"
+                src="public/307987427_100631379489831_7503186480526532890_upscaled-removebg-preview-200w.png"
+                class="branding-logo"
+              />
+            </div>
+          </div>
+          <span class="home-text096">
+            <br class="home-text097" />
+            <span class="home-text098">+91&nbsp;994 447 8886&nbsp;</span>
+            <br />
+            <span>udaviduvommanitha2020@gmail.com</span>
+            <br />
+          </span>
+          <div class="home-middle">
+            <span class="home-text102">
+              12/12, Kasthuribai Street, Gandhi Nagar, Chennai – 600 082
+            </span>
+          </div>
+          <div class="home-bottom">
+            <span class="home-copyright">
+              ©&nbsp;Udhaviduvom Manitha Arakkatalai&nbsp; – 2024
+            </span>
+          </div>
+        </footer>
+        <div>
+          <div class="home-container6">
+            <script>
+              const slides = document.querySelectorAll('.slide');
+              let currentSlide = 0;
+
+              function showSlide(n) {
+                slides[currentSlide].classList.remove('slide-active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('slide-active');
+              }
+
+              const previousSlideButton = document.querySelector('#previous-slide');
+              previousSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+              });
+
+              const nextSlideButton = document.querySelector('#next-slide');
+              nextSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+              });
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="home-container8">
+            <script>
+              function setCookie(name, value, days) {
+                // Set the cookie with the given name, value, and expiration time (in days)
+                let expires = '';
+                if (days) {
+                  let date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = '; expires=' + date.toUTCString();
+                }
+                document.cookie = name + '=' + (value || '') + expires + '; path=/';
+              }
+
+              function getCookie(name) {
+                // Get the value of the cookie with the given name
+                let nameEQ = name + '=';
+                let ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                  let c = ca[i];
+                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+              }
+
+              function removeCookie(name) {
+                // Remove the cookie with the given name
+                setCookie(name, '', -1); // Set the cookie with an expiration time of -1 days
+              }
+
+              document.getElementById('close').addEventListener('click', function(){
+                // Get the persistence value
+                let persistence = document.getElementById('banner').getAttribute('data-persistence');
+                if (persistence === 'true') {
+                  // If persistence is enabled, set a cookie to remember that the banner is closed
+                  setCookie('bannerClosed', 'true', 1); // Set the cookie with an expiration time of 1 day
+                } else {
+                  removeCookie('bannerClosed')
+                }
+                document.getElementById('banner').style.display = 'none'; // Hide the banner
+              });
+
+              window.addEventListener('load', function() {
+                // Check if the banner should be displayed or not
+                let bannerClosed = getCookie('bannerClosed');
+                if (bannerClosed === 'true') {
+                  // If the bannerClosed cookie is set, hide the banner
+                  document.getElementById('banner').style.display = 'none';
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
